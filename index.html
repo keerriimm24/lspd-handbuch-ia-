@@ -450,7 +450,7 @@
 
   <div class="sidebar-section-label">Einsatzgebiete</div>
   <a class="nav-link" href="#ermittlungen"><span class="icon">🕵️</span> Ermittlungen</a>
-  <a class="nav-link" href="#geiselnahmen"><span class="icon">🎯</span> Geiselnahmen</a>
+  <a class="nav-link" href="#berichte"><span class="icon">📝</span> Berichte</a>
   <a class="nav-link" href="#razzien"><span class="icon">🔎</span> Razzien</a>
 
   <div class="sidebar-section-label">Vorschriften</div>
@@ -690,52 +690,101 @@
     </div>
   </section>
 
-  <!-- GEISELNAHMEN -->
-  <section id="geiselnahmen">
-    <div class="sec-label">Taktik & Protokoll</div>
-    <h2 class="sec-title">Geiselnahmen</h2>
-    <p class="sec-desc">Einsatzprinzipien bei Geisellagen. Deeskalation und der Schutz von Menschenleben haben in jedem Fall Vorrang vor der Festnahme von Tätern.</p>
+  <!-- BERICHTE -->
+  <section id="berichte">
+    <div class="sec-label">Protokoll</div>
+    <h2 class="sec-title">Berichte</h2>
+    <p class="sec-desc">Mit der richtigen Vorgehensweise und ausreichend Wissen lassen sich Probleme bei einem Bericht vermeiden.</p>
     <div class="divider"></div>
 
     <div class="alert alert-warn">
-      <div class="alert-icon">⚠</div>
+      <div class="alert-icon">⚠️</div>
       <div class="alert-body">
-        <div class="alert-title">Geiselschutz hat oberste Priorität</div>
-        <div class="alert-desc">In Geiselnahmen steht das Leben der Geiseln an oberster Stelle. Jede operative Entscheidung muss dieses Ziel berücksichtigen.</div>
+        <div class="alert-title">Qualität vor Schnelligkeit</div>
+        <div class="alert-desc">Ein Bericht muss vollständig, korrekt und nachvollziehbar sein — nur so kann die IA effektiv arbeiten.</div>
       </div>
     </div>
 
-    <div class="cards-grid" style="margin-top:24px;">
-      <div class="card">
-        <div class="card-icon-wrap">🛡</div>
-        <div class="card-title">Eigensicherung</div>
-        <div class="card-body">Eigensicherung ist in jeder Geiselnahme von entscheidender Bedeutung. Ungesicherte Positionen vermeiden.</div>
+    <div style="display:flex; flex-direction:column; gap:8px; margin-top:24px;">
+
+      <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
+        <div onclick="toggle('a1')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:16px;">📋</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Bericht erstellen</span>
+          </div>
+          <span id="arrow-a1" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
+        </div>
+        <div id="a1" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.7; border-top:1px solid rgba(139,92,246,0.1);">
+          Dokumentation vollständig und korrekt ausfüllen. Alle Pflichtangaben müssen stimmen — Titel, Beschreibung, Kategorie, Priorität, beschuldigter Mitarbeiter, Ermittlungsleiter und Beschwerdeführer.
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon-wrap">🚫</div>
-        <div class="card-title">Keine Provokationen</div>
-        <div class="card-body">Keine provokanten Aussagen oder Handlungen gegenüber den Geiselnehmern. Ruhe bewahren.</div>
+
+      <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
+        <div onclick="toggle('a2')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:16px;">🪪</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Beschwerdeführer erfassen</span>
+          </div>
+          <span id="arrow-a2" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
+        </div>
+        <div id="a2" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.7; border-top:1px solid rgba(139,92,246,0.1);">
+          Beim Beschwerdeführer den Ausweis prüfen und Vor- und Nachname sowie Telefonnummer korrekt erfassen. Die Beschreibung muss ausführlich formuliert sein.
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon-wrap">🗣</div>
-        <div class="card-title">Neutral verhandeln</div>
-        <div class="card-body">Verhandlungen ausschließlich neutral und sachlich führen. Nur der designierte Verhandlungsführer kommuniziert.</div>
+
+      <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
+        <div onclick="toggle('a3')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:16px;">🔎</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Ermittlungsergebnisse</span>
+          </div>
+          <span id="arrow-a3" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
+        </div>
+        <div id="a3" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.7; border-top:1px solid rgba(139,92,246,0.1);">
+          Fazit und Abschluss unter „Ermittlungsergebnisse" eintragen. Unter „Empfehlung" persönliche Einschätzung und mögliche Konsequenzen angeben. „Notizen" für zusätzliche Hinweise nutzen.
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon-wrap">💬</div>
-        <div class="card-title">Beruhigend einwirken</div>
-        <div class="card-body">Beruhigend auf Tatverdächtige einwirken. Schrittweise Geiselfreigabe anstreben.</div>
+
+      <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
+        <div onclick="toggle('a4')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:16px;">⚖️</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Neutralität & Professionalität</span>
+          </div>
+          <span id="arrow-a4" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
+        </div>
+        <div id="a4" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.7; border-top:1px solid rgba(139,92,246,0.1);">
+          Nehmt jede Beschwerde ernst und bleibt stets professionell, sachlich und neutral. Andernfalls können interne oder externe Konsequenzen folgen.
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon-wrap">🔫</div>
-        <div class="card-title">Waffenbedrohung</div>
-        <div class="card-body">Nicht mit Waffen auf Geiselnehmer zielen, solange keine unmittelbare Lebensgefahr besteht. Befehl der Einsatzleitung abwarten.</div>
+
+      <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
+        <div onclick="toggle('a5')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:16px;">💭</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Gespräch führen</span>
+          </div>
+          <span id="arrow-a5" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
+        </div>
+        <div id="a5" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.7; border-top:1px solid rgba(139,92,246,0.1);">
+          Beide Parteien nach Zustimmung zu einem klärenden Gespräch fragen. Neutral bleiben, Gespräch beobachten und dokumentieren. Bei Problemen sofort eingreifen.
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon-wrap">📋</div>
-        <div class="card-title">Nachbereitung</div>
-        <div class="card-body">Geiselübergabeprotokoll, medizinische Versorgung, Personendaten erfassen, detaillierter Einsatzbericht.</div>
+
+      <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
+        <div onclick="toggle('a6')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:16px;">🚨</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Konsequenzen</span>
+          </div>
+          <span id="arrow-a6" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
+        </div>
+        <div id="a6" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.7; border-top:1px solid rgba(139,92,246,0.1);">
+          Wird festgestellt, dass die Dokumentation unvollständig oder fehlerhaft ist oder bei einer Gerichtsverhandlung Akten fehlen, haftet der zuständige Ermittlungsleiter. Dies führt zu internen oder externen Maßnahmen.
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -964,6 +1013,14 @@
 </footer>
 
 <script>
+  function toggle(id) {
+    const el = document.getElementById(id);
+    const arrow = document.getElementById('arrow-' + id);
+    const open = el.style.display === 'block';
+    el.style.display = open ? 'none' : 'block';
+    arrow.style.transform = open ? '' : 'rotate(180deg)';
+  }
+
   // Highlight active nav link on scroll
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');

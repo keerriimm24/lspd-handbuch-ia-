@@ -448,7 +448,7 @@
   <a class="nav-link" href="#regeln-und-pflichten"><span class="icon">📕</span> Regeln & Pflichten</a>
   <a class="nav-link" href="#ia"><span class="icon">🔍</span> Internal Affairs</a>
 
-  <div class="sidebar-section-label">Einsatzgebiete</div>
+  <div class="sidebar-section-label">Aufgabengebiete</div>
   <a class="nav-link" href="#ermittlungen"><span class="icon">🕵️</span> Ermittlungen</a>
   <a class="nav-link" href="#berichte"><span class="icon">📝</span> Berichte</a>
   <a class="nav-link" href="#razzien"><span class="icon">🔎</span> Razzien</a>
@@ -701,7 +701,7 @@
       <div class="alert-icon">⚠️</div>
       <div class="alert-body">
         <div class="alert-title">Qualität vor Schnelligkeit</div>
-        <div class="alert-desc">Ein Bericht muss vollständig, korrekt und nachvollziehbar sein — nur so kann die IA effektiv arbeiten.</div>
+        <div class="alert-desc">Ein Bericht muss vollständig, korrekt und nachvollziehbar sein nur so kann die IA effektiv arbeiten.</div>
       </div>
     </div>
 
@@ -710,34 +710,48 @@
       <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
         <div onclick="toggle('a1')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
           <div style="display:flex; align-items:center; gap:10px;">
-            <span style="font-size:16px;">📋</span>
-            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Bericht erstellen</span>
+            <span style="font-size:16px;">📖</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Vorlage</span>
           </div>
           <span id="arrow-a1" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
         </div>
         <div id="a1" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.7; border-top:1px solid rgba(139,92,246,0.1);">
-          Dokumentation vollständig und korrekt ausfüllen. Alle Pflichtangaben müssen stimmen — Titel, Beschreibung, Kategorie, Priorität, beschuldigter Mitarbeiter, Ermittlungsleiter und Beschwerdeführer.
+          Da es keine Vorlage gibt, orientiert euch am Schema. Prüft die Punkte und fasst sie in einem ausführlichen, übersichtlichen Text zusammen. Bewertung am Ende hinzufügen.
         </div>
       </div>
 
       <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
         <div onclick="toggle('a2')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
           <div style="display:flex; align-items:center; gap:10px;">
-            <span style="font-size:16px;">🪪</span>
-            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Beschwerdeführer erfassen</span>
+            <span style="font-size:16px;">🎓</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Bewertungen</span>
           </div>
           <span id="arrow-a2" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
         </div>
-        <div id="a2" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.7; border-top:1px solid rgba(139,92,246,0.1);">
-          Beim Beschwerdeführer den Ausweis prüfen und Vor- und Nachname sowie Telefonnummer korrekt erfassen. Die Beschreibung muss ausführlich formuliert sein.
+        <div id="a2" style="display:none; padding:12px 20px 16px; font-size:13px; color:#94a3b8; line-height:1.8; border-top:1px solid rgba(139,92,246,0.1);">
+          <p style="margin-bottom:14px;">Die X Zeilen werden in Schulnoten ausgefüllt. Zur Berechnung der Gesamtnote werden alle Noten addiert: Beim Team-Silver-Bericht wird die Summe durch 5, beim Team-Gold-Bericht durch 10 geteilt.</p>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:center; gap:10px; background:rgba(34,197,94,0.07); border:1px solid rgba(34,197,94,0.2); border-radius:10px; padding:10px 14px;">
+              <span style="font-size:14px;">✅</span>
+              <div><span style="font-size:12px; font-weight:900; color:#4ade80;">Bestanden ab Note ≤2.5</span><span style="font-size:12px; color:#64748b;"> — Normaler IA Bericht</span></div>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; background:rgba(34,197,94,0.07); border:1px solid rgba(34,197,94,0.2); border-radius:10px; padding:10px 14px;">
+              <span style="font-size:14px;">✅</span>
+              <div><span style="font-size:12px; font-weight:900; color:#4ade80;">Bestanden ab Note ≤2.0</span><span style="font-size:12px; color:#64748b;"> — Team Silver Bericht</span></div>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; background:rgba(34,197,94,0.07); border:1px solid rgba(34,197,94,0.2); border-radius:10px; padding:10px 14px;">
+              <span style="font-size:14px;">✅</span>
+              <div><span style="font-size:12px; font-weight:900; color:#4ade80;">Bestanden ab Note ≤1.7</span><span style="font-size:12px; color:#64748b;"> — Team Gold Bericht</span></div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div style="border:1px solid rgba(139,92,246,0.2); border-radius:14px; overflow:hidden;">
         <div onclick="toggle('a3')" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; cursor:pointer; background:rgba(139,92,246,0.06);">
           <div style="display:flex; align-items:center; gap:10px;">
-            <span style="font-size:16px;">🔎</span>
-            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Ermittlungsergebnisse</span>
+            <span style="font-size:16px;">🏃</span>
+            <span style="font-size:14px; font-weight:900; color:#f8fafc;">Weiteres Vorgehen</span>
           </div>
           <span id="arrow-a3" style="color:#a78bfa; font-size:12px; transition:transform 0.2s;">▼</span>
         </div>
